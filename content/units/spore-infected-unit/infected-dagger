@@ -1,1 +1,8 @@
-
+type: mech
+speed: 1.0
+health: 100
+armor: 1
+//1*1크기
+hitSize: 8
+range: 60
+immunities: []
