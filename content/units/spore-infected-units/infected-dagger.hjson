@@ -16,7 +16,7 @@ weapons: [
         x: 4
         y:2
         top: false
-        inaccuracy: 5
+        inaccuracy: 15
         ejectEffect: casing1
         shootStatus: spore-infection
 
