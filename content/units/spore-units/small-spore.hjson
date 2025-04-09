@@ -5,7 +5,9 @@ rotateSpeed: 0
 engineSize: 0
 hitSize: 2
 
+template: MissileUnitType
 controller: MissileAI
+
 deathSound: plantBreak
 deathExplosionEffect: steam
 createScorch: false
