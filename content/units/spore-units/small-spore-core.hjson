@@ -19,23 +19,24 @@ physics: false
 groundLayer: 59.9
 
 weapons: [
-{
-    shootWarmupSpeed: 0.01
-    minWarmup: 0.9
-    warmupMaintainTime: 90
-    rotate: true
-    reload: 800
-    shootCone: 360
-    shootSound: none
-    ejectEffect: none
-    faceTarget: false
+    {
+        shootWarmupSpeed: 0.01
+        minWarmup: 0.9
+        warmupMaintainTime: 90
+        rotate: true
+        reload: 800
+        shootCone: 360
+        shootSound: none
+        ejectEffect: none
+        faceTarget: false
 
-    bullet: {
-        type: BasicBulletType
-        rangeOverride: 360
-        damage: 0
-        instantDisappear: true
-        spawnUnit: spore-dagger
+        bullet: {
+            type: BasicBulletType
+            rangeOverride: 360
+            damage: 0
+            instantDisappear: true
+            spawnUnit: spore-dagger
+        }
     },
     {
         rotate: true
@@ -61,7 +62,6 @@ weapons: [
             backColor: ff00ff
         }
     }
-}
 ]
 
 abilities: [
