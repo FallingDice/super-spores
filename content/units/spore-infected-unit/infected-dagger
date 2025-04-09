@@ -3,4 +3,19 @@ speed: 0.5
 health: 150
 //1*1크기
 hitSize: 8
-immunities: []
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: spore-dagger
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]
