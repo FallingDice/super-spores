@@ -1,1 +1,40 @@
+type: missile
+flying: false
+speed: 0
+rotateSpeed: 0
+engineSize: 0
+hitSize: 4
 
+deathSound: plantBreak
+deathExplosionEffect: steam
+createScorch: false
+envDisabled: 0
+
+lifetime: 3600
+health: 500
+armor: 3
+drawCell: false
+
+physics: false
+groundLayer: 59.9
+
+weapons: [
+{ 
+  x: 0
+  y: 0
+  rotate: true
+  mirror: false
+  faceTarget: false
+  shootSound: none
+  reload: 120
+  bullet: 
+   }
+]
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 5
+    }
+]
