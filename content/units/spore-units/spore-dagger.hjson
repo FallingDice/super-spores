@@ -4,7 +4,7 @@ health: 150
 armor: 5
 //1*1크기
 hitSize: 8
-immunities: [spore-infection]
+immunities: [spore-infection, sporeSlowed]
 
 weapons: [
     {
@@ -39,6 +39,11 @@ abilities: [
     {
         type: LiquidExplodeAbility
         liquid: water
-        amount: 5
+        amount: 30
+    },
+    {
+        type: LiquidRegenAbility
+        liquid: water
+        slurpEffect: neoplasmHeal
     }
 ]
