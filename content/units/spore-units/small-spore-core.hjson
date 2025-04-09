@@ -40,7 +40,8 @@ weapons: [
     },
     {
         rotate: true
-        reload: 26
+        mirror: false
+        reload: 30
         x: 4
         y:2
         top: false
@@ -59,11 +60,9 @@ weapons: [
             sapStrength: 0.85
             length: 55
             shootEffect: shootSmall
-            hitColor: ffffff
-            frontColor: ffffff
-            backColor: ff00ff
+            hitColor: ff00ff
             width: 0.55
-            lifetime: 30
+            lifetime: 60
             knockback: 1.5
             
             status: spore-slowed
