@@ -51,16 +51,21 @@ weapons: [
             shotDelay: 10
             }
 
+        shootSound: sap
+
         bullet: {
-            type: BasicBulletType
-            damage: 13
-            speed: 4.5
-            width: 7
-            height: 9
-            lifetime: 60
+            type: SapBulletType
+            damage: 10
+            sapStrength: 0.85
+            length: 55
+            shootEffect: shootSmall
+            hitColor: ffffff
+            color: ff00ff
+            width: 0.55
+            lifetime: 15
+            knockback: 0.5
             
-            frontColor: ffffff
-            backColor: ff00ff
+            status: spore-slowed
         }
     }
 ]
