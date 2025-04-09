@@ -6,6 +6,7 @@ hitSize: 8
 
 weapons: [
     {
+        name: large-weapon
         mirror: true
         reload: 13
         x: 4
@@ -17,8 +18,8 @@ weapons: [
 
         bullet: {
             type: BasicBulletType
-            damage: 10
-            speed: 4.25
+            damage: 9
+            speed: 2.5
             width: 7
             height: 9
             lifetime: 60
