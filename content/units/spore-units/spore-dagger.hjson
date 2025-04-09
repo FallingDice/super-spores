@@ -4,7 +4,7 @@ health: 150
 armor: 5
 //1*1크기
 hitSize: 8
-immunities: [spore-infection, sporeSlowed]
+immunities: [spore-infection, spore-slowed]
 
 weapons: [
     {

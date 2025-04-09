@@ -14,6 +14,7 @@ lifetime: 3600
 health: 500
 armor: 3
 drawCell: false
+immunities: [spore-infection, spore-slowed]
 
 physics: false
 groundLayer: 59.9
