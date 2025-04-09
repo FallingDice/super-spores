@@ -5,10 +5,7 @@ rotateSpeed: 0
 engineSize: 0
 hitSize: 2
 
-template: MissileUnitType
 useUnitCap: false
-hidden: false
-range: 160
 physics: true
 
 deathSound: plantBreak
