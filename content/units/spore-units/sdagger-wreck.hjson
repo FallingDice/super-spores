@@ -3,14 +3,14 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 4
+hitSize: 8
 
 deathSound: plantBreak
 deathExplosionEffect: steam
 createScorch: false
 
 lifetime: 3600
-health: 500
+health: 150
 armor: 3
 drawCell: false
 immunities: [spore-infection, spore-slowed]
@@ -24,49 +24,20 @@ weapons: [
         minWarmup: 0.9
         warmupMaintainTime: 90
         rotate: true
-        reload: 800
         shootCone: 360
         shootSound: none
         ejectEffect: none
         shootEffect: none
         faceTarget: false
+        shootOnDeath: true
 
         bullet: {
             type: BasicBulletType
             rangeOverride: 360
             damage: 0
             instantDisappear: true
-            spawnUnit: small-spore-core
-        }
-    },
-    {
-        rotate: true
-        mirror: false
-        reload: 30
-        x: 4
-        y:2
-        top: false
-        ejectEffect: none
-
-        shoot: {
-            shots: 2
-            shotDelay: 10
-            }
-
-        shootSound: sap
-
-        bullet: {
-            type: SapBulletType
-            damage: 10
-            sapStrength: 0.85
-            length: 55
-            shootEffect: shootSmall
-            hitColor: ff00ff
-            width: 0.55
-            lifetime: 60
-            knockback: 1.5
-            
-            status: spore-slowed
+            spawnUnit: spore-dagger
+            killShooter: true
         }
     }
 ]
@@ -75,7 +46,7 @@ abilities: [
     {
         type: LiquidExplodeAbility
         liquid: water
-        amount: 20
+        amount: 30
     },
     {
         type: LiquidRegenAbility
