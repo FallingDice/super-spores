@@ -7,8 +7,9 @@ hitSize: 2
 
 template: MissileUnitType
 useUnitCap: false
-homingPower: 0.3
-homingRange: 160
+hidden: false
+range: 160
+physics: true
 
 deathSound: plantBreak
 deathExplosionEffect: steam
@@ -19,7 +20,6 @@ health: 100
 drawCell: false
 immunities: [spore-infection, spore-slowed]
 
-physics: false
 groundLayer: 59.9
 
 weapons: [
