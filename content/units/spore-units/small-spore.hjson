@@ -5,6 +5,7 @@ rotateSpeed: 0
 engineSize: 0
 hitSize: 2
 
+controller: MissileAI
 deathSound: plantBreak
 deathExplosionEffect: steam
 createScorch: false
@@ -33,7 +34,6 @@ weapons: [
         bullet: {
             type: SapBulletType
             damage: 5
-            sapStrength: 0.85
             length: 55
             shootEffect: shootSmall
             hitColor: ff00ff
