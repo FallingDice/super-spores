@@ -7,7 +7,10 @@ hitSize: 8
 weapons: [
     {
         mirror: true
-        reload: 20
+        reload: 13
+        x: 4
+        y:2
+        top: false
         inaccuracy: 5
         ejectEffect: casing1
         shootStatus: spore-infection
@@ -16,9 +19,9 @@ weapons: [
             type: BasicBulletType
             damage: 10
             speed: 4.25
-            width: 4
-            height: 6
-            lifetime: 30
+            width: 7
+            height: 9
+            lifetime: 60
         }
     }
 ]
