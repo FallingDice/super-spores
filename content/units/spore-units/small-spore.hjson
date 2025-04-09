@@ -6,6 +6,7 @@ engineSize: 0
 hitSize: 2
 
 template: MissileUnitType
+useUnitCap: false
 
 deathSound: plantBreak
 deathExplosionEffect: steam
