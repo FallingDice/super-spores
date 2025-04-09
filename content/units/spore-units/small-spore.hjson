@@ -6,7 +6,6 @@ engineSize: 0
 hitSize: 2
 
 template: MissileUnitType
-controller: MissileAI
 
 deathSound: plantBreak
 deathExplosionEffect: steam
