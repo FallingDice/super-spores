@@ -38,6 +38,13 @@ weapons: [
 abilities: [
     {
         type: SpawnDeathAbility
+        amount: 1
+        spread: 5
+        faceOutwards: false
+        unit: sdagger-wreck
+    },
+    {
+        type: SpawnDeathAbility
         randAmount: 1
         amount: 0
         spread: 0
