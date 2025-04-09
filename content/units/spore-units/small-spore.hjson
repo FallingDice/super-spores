@@ -7,6 +7,8 @@ hitSize: 2
 
 template: MissileUnitType
 useUnitCap: false
+homingPower: 0.3
+homingRange: 160
 
 deathSound: plantBreak
 deathExplosionEffect: steam
