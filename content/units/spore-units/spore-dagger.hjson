@@ -10,19 +10,26 @@ weapons: [
     {
         name: large-weapon
         mirror: true
-        reload: 13
+        reload: 7
         x: 4
         y:2
         top: false
         ejectEffect: casing1
 
+        shoot: {
+            shots: 3
+            shotDelay: 5
+            }
+
         bullet: {
             type: BasicBulletType
-            damage: 9
-            speed: 2.5
+            damage: 13
+            speed: 4.5
             width: 7
             height: 9
             lifetime: 60
+
+            backColor: ff00ff
         }
     }
 ]

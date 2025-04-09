@@ -4,6 +4,10 @@ health: 150
 //1*1크기
 hitSize: 8
 
+deathSound: plantBreak
+deathExplosionEffect: steam
+createScorch: false
+
 weapons: [
     {
         name: large-weapon
