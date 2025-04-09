@@ -40,7 +40,7 @@ weapons: [
     },
     {
         rotate: true
-        reload: 7
+        reload: 26
         x: 4
         y:2
         top: false
@@ -58,7 +58,8 @@ weapons: [
             width: 7
             height: 9
             lifetime: 60
-
+            
+            frontColor: ffffff
             backColor: ff00ff
         }
     }
