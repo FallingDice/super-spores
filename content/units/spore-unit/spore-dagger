@@ -1,8 +1,45 @@
 type: mech
 speed: 0.5
 health: 150
-armor: 1
+armor: 5
 //1*1크기
 hitSize: 8
-range: 60
 immunities: [spore-infection]
+
+weapons: [
+    {
+        name: large-weapon
+        mirror: true
+        reload: 13
+        x: 4
+        y:2
+        top: false
+        inaccuracy: 5
+        ejectEffect: casing1
+
+        bullet: {
+            type: BasicBulletType
+            damage: 9
+            speed: 2.5
+            width: 7
+            height: 9
+            lifetime: 60
+        }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: small-spore-core
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 5
+    }
+]
