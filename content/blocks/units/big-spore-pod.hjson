@@ -24,8 +24,8 @@ shootType: {
 
 unitCapModifier: 8
 squareSprite: false
-//drawTeamOverlay: false
-//buildVisibility: sandboxOnly
+drawTeamOverlay: false
+buildVisibility: sandboxOnly
 
 outlineRadius: 0
 
