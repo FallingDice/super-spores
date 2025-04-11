@@ -5,19 +5,19 @@ size: 3
 health: 500
 
 requirements: [
-    copper/200, lead/150, silicon/60
+    copper/50, lead/120, silicon/80, spore-pod/20
 ]
 
 plans: [
   {
     unit: infected-dagger
-    requirements: [silicon/15, lead/10, spore-pod/3]
-    time: 1200
+    requirements: [silicon/10, lead/10, spore-pod/2]
+    time: 900
   }
 ]
 
 consumes: {
-  power: 1
+  power: 1.2
 }
 
 research: {
