@@ -84,3 +84,7 @@ abilities: [
         slurpEffect: neoplasmHeal
     }
 ]
+
+research: {
+    parent: infected-dagger
+}

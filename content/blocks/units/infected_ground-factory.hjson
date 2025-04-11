@@ -1,0 +1,26 @@
+type: unitFactory
+category: units
+size: 3
+
+health: 500
+
+requirements: [
+    copper/200, lead/150, silicon/60
+]
+
+plans: [
+  {
+    unit: infected-dagger
+    requirements: [silicon/15, lead/10, spore-pod/3]
+    time: 1200
+  }
+]
+
+consumes: {
+  power: 1
+}
+
+research: {
+    parent: core-shard
+}
+researchCostMultiplier: 0.4

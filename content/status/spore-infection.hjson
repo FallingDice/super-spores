@@ -29,3 +29,7 @@ affinities: [
 opposites: [
     burning, melting
   ]
+
+research: {
+    parent: core-shard
+}

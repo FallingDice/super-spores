@@ -46,3 +46,8 @@ abilities: [
         amount: 10
     }
 ]
+
+research: {
+    parent: infected_ground_factory
+}
+researchCostMultiplier: 0.4

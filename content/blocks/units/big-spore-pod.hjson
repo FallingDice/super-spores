@@ -1,0 +1,30 @@
+type: PowerTurret
+category: units
+size: 1
+health: 1000
+range: 200
+
+solid: false
+
+rotateSpeed: 0.1
+
+consumes: {}
+
+shootSound: plantBreak
+shootY: 0.5
+reload: 600
+
+shootType: {
+  shootEffect: shootBig
+  smokeEffect: artilleryTrailSmoke
+  instantDisappear: true
+  damage: 0
+  spawnUnit: small-spore
+}
+
+unitCapModifier: 8
+drawTeamOverlay: false
+squareSprite: false
+buildVisibility: sandboxOnly
+
+outlineRadius: 0
