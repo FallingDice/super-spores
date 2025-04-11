@@ -48,6 +48,6 @@ abilities: [
 ]
 
 research: {
-    parent: infected_ground_factory
+    parent: infected-ground-factory
 }
 researchCostMultiplier: 0.4

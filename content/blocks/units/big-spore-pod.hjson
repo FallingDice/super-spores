@@ -25,6 +25,10 @@ shootType: {
 unitCapModifier: 8
 drawTeamOverlay: false
 squareSprite: false
-buildVisibility: sandboxOnly
+//buildVisibility: sandboxOnly
 
 outlineRadius: 0
+
+research: {
+    parent: core-shard
+}
