@@ -60,6 +60,10 @@ abilities: [
         type: LiquidRegenAbility
         liquid: water
         slurpEffect: neoplasmHeal
+    },
+    {
+        type: RegenAbility
+        amount: 1
     }
 ]
 
