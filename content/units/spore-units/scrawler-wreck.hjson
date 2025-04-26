@@ -1,0 +1,60 @@
+type: missile
+flying: false
+speed: 0
+rotateSpeed: 0
+engineSize: 0
+hitSize: 8
+
+deathSound: plantBreak
+deathExplosionEffect: steam
+createScorch: false
+
+lifetime: 360
+health: 150
+armor: 0
+drawCell: false
+immunities: [spore-infection, spore-slowed]
+
+physics: false
+groundLayer: 59.9
+
+weapons: [
+    {
+        shootWarmupSpeed: 0.3
+        minWarmup: 0.9
+        warmupMaintainTime: 90
+        rotate: true
+        shootCone: 360
+        shootSound: none
+        ejectEffect: none
+        shootEffect: none
+        faceTarget: false
+        shootOnDeath: true
+
+        bullet: {
+            type: BasicBulletType
+            rangeOverride: 360
+            damage: 0
+            instantDisappear: true
+            spawnUnit: spore-crawler
+            killShooter: true
+        }
+    }
+]
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 30
+    },
+    {
+        type: LiquidRegenAbility
+        liquid: water
+        slurpEffect: neoplasmHeal
+    }
+]
+
+research: {
+    parent: infected-dagger
+}

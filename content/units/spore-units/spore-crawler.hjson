@@ -1,0 +1,76 @@
+type: mech
+speed: 1
+health: 150
+armor: 2
+//1*1크기
+hitSize: 8
+immunities: [spore-infection, spore-slowed]
+
+aiController: SuicideAI
+mechSideSway: 0.25
+range: 40
+
+weapons: [
+    {
+        shootOnDeath: true
+        targetUnderBlocks: false
+        reload: 24
+        shootCone: 180
+        ejectEffect: none
+        shootSound: explosion
+        x: 0
+        shootY: 0
+        mirror: false
+                bullet: {
+                    collidesTiles = false
+                    collides = false
+                    hitSound = Sounds.explosion
+
+                    rangeOverride: 25
+                    hitEffect: pulverize
+                    speed: 0
+                    splashDamageRadius: 44
+                    instantDisappear: true
+                    splashDamage: 80
+                    killShooter: true
+                    hittable: false
+                    collidesAir: true
+                }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 2
+        spread: 5
+        faceOutwards: false
+        unit: scrawler-wreck
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: small-spore-core
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 30
+    },
+    {
+        type: LiquidRegenAbility
+        liquid: water
+        slurpEffect: neoplasmHeal
+    },
+    {
+        type: RegenAbility
+        amount: 0.25
+    }
+]
+
+research: {
+    parent: infected-dagger
+}
