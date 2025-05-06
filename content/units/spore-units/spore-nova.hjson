@@ -59,7 +59,7 @@ weapons: [
             rangeOverride: 360
             damage: 0
             instantDisappear: true
-            spawnUnit: spore-infected-nova
+            spawnUnit: infected-nova
         }
 
         parts: [
