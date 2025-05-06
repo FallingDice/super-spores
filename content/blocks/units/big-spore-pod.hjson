@@ -28,7 +28,3 @@ drawTeamOverlay: false
 buildVisibility: sandboxOnly
 
 outlineRadius: 0
-
-research: {
-    parent: core-shard
-}
