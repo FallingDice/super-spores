@@ -1,15 +1,9 @@
 type: mech
 speed: 1
 health: 150
-armor: 2
 //1*1크기
 hitSize: 8
-immunities: [spore-infection, spore-slowed]
 
-deathExplosionEffect: steam
-createScorch: false
-
-controller: SuicideAI
 mechSideSway: 0.25
 range: 40
 
@@ -45,36 +39,20 @@ weapons: [
 abilities: [
     {
         type: SpawnDeathAbility
-        randAmount: 3
-        amount: 0
-        spread: 5
-        faceOutwards: false
-        unit: scrawler-wreck
-    },
-    {
-        type: SpawnDeathAbility
         randAmount: 1
         amount: 0
         spread: 0
         faceOutwards: false
-        unit: small-spore-core
+        unit: spore-crawler
     },
     {
         type: LiquidExplodeAbility
         liquid: water
-        amount: 30
-    },
-    {
-        type: LiquidRegenAbility
-        liquid: water
-        slurpEffect: neoplasmHeal
-    },
-    {
-        type: RegenAbility
-        amount: 0.25
+        amount: 10
     }
 ]
 
 research: {
-    parent: infected-crawler
+    parent: infected-ground-factory
 }
+researchCostMultiplier: 0.4

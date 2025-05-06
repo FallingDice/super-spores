@@ -1,0 +1,65 @@
+type: mech
+speed: 0.55
+health: 120
+//1*1크기
+hitSize: 8
+armor: 1
+
+canBoost: true
+boostMultiplier: 1.5
+buildSpeed: 0.3
+
+weapons: [
+    {
+        name: heal-weapon
+        shootY: 2
+        mirror: true
+        reload: 24
+        x: 4.5
+        top: false
+        alternate: false
+        inaccuracy: 15
+        ejectEffect: none
+        recoil: 2
+        shootSound: lasershoot
+        shootStatus: spore-infection
+
+        bullet: {
+            type: LaserBoltBulletType
+            damage: 13
+            speed: 5.2
+            lifetime: 30
+            healPercent: 5
+            collidesTeam: true
+            backColor: 98ffa9
+            frontColor: ffffff
+        }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: spore-nova
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    },
+    {
+        type: RepairFieldAbility
+        amount: 10
+        reload: 240
+        range: 60
+    }
+]
+
+research: {
+    parent: infected-ground-factory
+}
+researchCostMultiplier: 0.4

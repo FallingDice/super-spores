@@ -1,0 +1,138 @@
+type: mech
+speed: 0.55
+health: 120
+//1*1크기
+hitSize: 8
+armor: 8
+immunities: [spore-infection, spore-slowed]
+
+deathExplosionEffect: steam
+createScorch: false
+
+loopSound: spellLoop
+loopSoundVolume: 0.2
+
+canBoost: true
+boostMultiplier: 1.5
+buildSpeed: 0.3
+
+weapons: [
+    {
+        name: heal-weapon
+        shootY: 2
+        mirror: true
+        reload: 24
+        x: 4.5
+        top: false
+        alternate: false
+        inaccuracy: 15
+        ejectEffect: none
+        recoil: 2
+        shootSound: lasershoot
+
+        bullet: {
+            type: LaserBoltBulletType
+            damage: 13
+            speed: 5.2
+            lifetime: 30
+            healPercent: 5
+            collidesTeam: true
+            backColor: 98ffa9
+            frontColor: ffffff
+        }
+    },
+    (
+        x: 0
+        y: 15
+        reload: 360
+        cooldownTime: 120
+        recoil: 0
+        ejectEffect: none
+        shootSound: malignShoot
+        shootWarmupSpeed: 0.01
+        minWarmup: 0.9
+        warmupMaintainTime: 90
+        shootStatus: slow
+
+        bullet: {
+            type: BasicBulletType
+            rangeOverride: 360
+            damage: 0
+            instantDisappear: true
+            spawnUnit: spore-infected-nova
+        }
+
+        parts: [
+            {
+                type: shapePart
+                hollow: true
+                circle: true
+                layer: 110
+                color: bf92f9
+                stroke: 0
+                strokeTo: 0.4
+                radiusTo: 8
+                radius: 6
+            },
+            {
+                type: shapePart
+                hollow: true
+                circle: true
+                layer: 110
+                color: bf92f9
+                stroke: 0
+                strokeTo: 0.4
+                radiusTo: 10
+                radius: 7
+            },
+            {
+                type: HaloPart
+                radius: 6
+                radiusTo: 8
+                layer: 110
+                color: bf92f9
+                haloRotateSpeed: 1.5
+                haloRadius: 0
+                stroke: 0
+                strokeTo: 0.4
+                shapes: 2
+                hollow: true
+            }
+        ]
+    )
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: snova-wreck
+    },
+    {
+        type: RepairFieldAbility
+        amount: 10
+        reload: 240
+        range: 60
+    }
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 30
+    },
+    {
+        type: LiquidRegenAbility
+        liquid: water
+        slurpEffect: neoplasmHeal
+    },
+    {
+        type: RegenAbility
+        amount: 0.2
+    }
+]
+
+research: {
+    parent: infected-nova
+}

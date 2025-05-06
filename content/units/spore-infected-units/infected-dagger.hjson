@@ -4,9 +4,6 @@ health: 150
 //1*1크기
 hitSize: 8
 
-deathExplosionEffect: steam
-createScorch: false
-
 weapons: [
     {
         name: large-weapon

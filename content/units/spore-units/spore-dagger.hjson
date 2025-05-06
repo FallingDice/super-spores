@@ -6,6 +6,9 @@ armor: 5
 hitSize: 8
 immunities: [spore-infection, spore-slowed]
 
+deathExplosionEffect: steam
+createScorch: false
+
 weapons: [
     {
         name: large-weapon
@@ -38,6 +41,7 @@ weapons: [
 abilities: [
     {
         type: SpawnDeathAbility
+        randAmount: 0
         amount: 1
         spread: 5
         faceOutwards: false

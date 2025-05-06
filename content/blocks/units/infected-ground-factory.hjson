@@ -13,6 +13,11 @@ plans: [
     unit: infected-dagger
     requirements: [silicon/10, lead/10, spore-pod/2]
     time: 900
+  },
+  {
+    unit: infected-crawler
+    requirements: [silicon/8, coal/10, spore-pod/2]
+    time: 600
   }
 ]
 

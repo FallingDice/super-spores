@@ -82,6 +82,22 @@ abilities: [
         type: LiquidRegenAbility
         liquid: water
         slurpEffect: neoplasmHeal
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: sdagger-wreck
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: scrawler-wreck
     }
 ]
 
