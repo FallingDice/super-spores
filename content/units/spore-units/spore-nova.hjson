@@ -44,19 +44,19 @@ weapons: [
     {
         x: 0
         y: 15
-        reload: 360
-        cooldownTime: 120
+        reload: 720
+        cooldownTime: 240
         recoil: 0
         ejectEffect: none
         shootSound: malignShoot
-        shootWarmupSpeed: 0.01
+        shootWarmupSpeed: 0.005
         minWarmup: 0.9
         warmupMaintainTime: 90
         shootStatus: slow
 
         bullet: {
             type: BasicBulletType
-            rangeOverride: 360
+            rangeOverride: 120
             damage: 0
             instantDisappear: true
             spawnUnit: infected-nova

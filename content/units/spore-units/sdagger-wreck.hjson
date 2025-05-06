@@ -20,7 +20,7 @@ groundLayer: 59.9
 
 weapons: [
     {
-        shootWarmupSpeed: 0.02
+        shootWarmupSpeed: 0.03
         minWarmup: 0.9
         warmupMaintainTime: 90
         rotate: true
