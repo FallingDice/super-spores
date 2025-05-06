@@ -41,7 +41,7 @@ weapons: [
             frontColor: ffffff
         }
     },
-    (
+    {
         x: 0
         y: 15
         reload: 360
@@ -99,7 +99,7 @@ weapons: [
                 hollow: true
             }
         ]
-    )
+    }
 ]
 
 abilities: [
