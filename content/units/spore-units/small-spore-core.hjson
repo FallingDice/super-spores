@@ -98,9 +98,17 @@ abilities: [
         spread: 0
         faceOutwards: false
         unit: scrawler-wreck
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: snova-wreck
     }
 ]
 
 research: {
-    parent: infected-dagger
+    parent: infected-ground-factory
 }

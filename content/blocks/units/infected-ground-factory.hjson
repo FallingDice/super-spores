@@ -18,6 +18,11 @@ plans: [
     unit: infected-crawler
     requirements: [silicon/8, coal/10, spore-pod/2]
     time: 600
+  },
+  {
+    unit: infected-nova
+    requirements: [silicon/30, lead/20, titanium/20, spore-pod/4]
+    time: 2400
   }
 ]
 

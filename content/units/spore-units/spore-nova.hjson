@@ -95,7 +95,7 @@ weapons: [
                 haloRadius: 0
                 stroke: 0
                 strokeTo: 0.4
-                shapes: 2
+                shapes: 1
                 hollow: true
             }
         ]
