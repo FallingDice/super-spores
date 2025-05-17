@@ -2,8 +2,8 @@ type: ItemTurret
 category: turret
 health: 800
 size: 3
-range: 360
-minRange: 60
+range: 1200
+minRange: 120
 ammoEjectBack: 5
 ammoUseEffect: casing3Double
 ammoPerShot: 2
@@ -41,9 +41,8 @@ ammoTypes: {
     width: 11
     height: 11
     speed: 5
-    damage: 5
-    rangeOverride: 1200
-    lifetime: 80
+    damage: 20
+    lifetime: 240
     splashDamage: 40
     splashDamageRadius: 50
     trailWidth: 3
@@ -71,7 +70,9 @@ ammoTypes: {
     height: 9
     speed: 5
     damage: 30
-    lifetime: 40
+    lifetime: 120
+    splashDamage: 40
+    splashDamageRadius: 50
   },
   lead: {
     type: BasicBulletType
@@ -79,7 +80,9 @@ ammoTypes: {
     height: 9
     speed: 5
     damage: 30
-    lifetime: 40
+    lifetime: 120
+    splashDamage: 40
+    splashDamageRadius: 50
   }
 }
 
