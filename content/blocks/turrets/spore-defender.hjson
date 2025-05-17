@@ -8,6 +8,7 @@ ammoEjectBack: 5
 ammoUseEffect: casing3Double
 ammoPerShot: 2
 
+rotateSpeed: 0.1
 shootY: 0.5
 
 requirements: [
@@ -40,7 +41,7 @@ ammoTypes: {
     type: ArtilleryBulletType
     width: 11
     height: 11
-    speed: 5
+    speed: 7
     damage: 20
     lifetime: 240
     splashDamage: 40
