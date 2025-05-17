@@ -1,0 +1,86 @@
+type: ItemTurret
+category: turret
+health: 800
+size: 3
+range: 360
+minRange: 60
+ammoEjectBack: 5
+ammoUseEffect: casing3Double
+ammoPerShot: 2
+
+requirements: [
+  spore-pod/30
+]
+
+shootSound: artillery
+forceMultiTarget: true
+
+reload: 360
+inaccuracy: 15
+recoil: 2
+shootCone: 180
+
+coolant: {
+  type: ConsumeCoolant
+  allowLiquid: true
+  amount: 0.1
+}
+
+shoot: {
+  shots: 3
+  shotDelay: 5
+}
+ammoTypes: {
+  spore-pod: {
+    type: ArtilleryBulletType
+    width: 11
+    height: 11
+    speed: 5
+    damage: 5
+    range: 720
+    lifetime: 80
+    splashDamage: 40
+    splashDamageRadius: 50
+    trailWidth: 3
+    trailLength: 5
+    trailColor: ff00ff
+    frontColor: ffffff
+    backColor: ff00ff
+    homingPower: 0.01
+    homingRange: 80
+    hitSound: explosion
+    hitEffect: blastExplosion
+    collidesTiles: false
+    makeFire: true
+    knockback: 0.8
+    smokeEffect: shootSmokeSquareSparse
+    despawnEffect: hitBulletColor
+
+    despawnUnit: small-spore-core
+
+    status: spore-slowed
+  },
+  copper: {
+    type: BasicBulletType
+    width: 6
+    height: 9
+    speed: 5
+    damage: 10
+    lifetime: 40
+  },
+  lead: {
+    type: BasicBulletType
+    width: 6
+    height: 9
+    speed: 5
+    damage: 10
+    lifetime: 40
+  }
+}
+
+research: {
+    parent: core-shard
+}
+researchCostMultiplier: 0.4
+
+unitCapModifier: 4
