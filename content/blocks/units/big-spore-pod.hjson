@@ -22,7 +22,7 @@ shootType: {
   spawnUnit: small-spore
 }
 
-unitCapModifier: 8
+unitCapModifier: 4
 squareSprite: false
 drawTeamOverlay: false
 buildVisibility: sandboxOnly

@@ -12,7 +12,7 @@ rotateSpeed: 0.1
 shootY: 0.5
 
 requirements: [
-  spore-pod/1200
+  spore-pod/600
 ]
 
 shootSound: artillery
@@ -43,7 +43,7 @@ ammoTypes: {
     height: 11
     speed: 7
     damage: 20
-    lifetime: 240
+    lifetime: 360
     splashDamage: 40
     splashDamageRadius: 50
     trailWidth: 3
@@ -51,8 +51,8 @@ ammoTypes: {
     trailColor: ff00ff
     frontColor: ffffff
     backColor: ff00ff
-    homingPower: 0.01
-    homingRange: 80
+    homingPower: 0.03
+    homingRange: 120
     hitSound: explosion
     hitEffect: blastExplosion
     collidesTiles: false
@@ -61,29 +61,33 @@ ammoTypes: {
     smokeEffect: shootSmokeSquareSparse
     despawnEffect: hitBulletColor
 
-    despawnUnit: small-spore-core
+    despawnUnit: t1-spore-egg
 
     status: spore-slowed
   },
   copper: {
     type: BasicBulletType
-    width: 6
+    width: 7
     height: 9
-    speed: 5
+    speed: 7
     damage: 30
-    lifetime: 120
-    splashDamage: 40
-    splashDamageRadius: 50
+    lifetime: 360
+    splashDamage: 20
+    splashDamageRadius: 30
+    homingPower: 0.01
+    homingRange: 80
   },
   lead: {
     type: BasicBulletType
-    width: 6
+    width: 7
     height: 9
-    speed: 5
+    speed: 7
     damage: 30
-    lifetime: 120
-    splashDamage: 40
-    splashDamageRadius: 50
+    lifetime: 360
+    splashDamage: 20
+    splashDamageRadius: 30
+    homingPower: 0.01
+    homingRange: 80
   }
 }
 
