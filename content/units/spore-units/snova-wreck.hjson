@@ -56,5 +56,5 @@ abilities: [
 ]
 
 research: {
-    parent: infected-dagger
+    parent: infected-nova
 }

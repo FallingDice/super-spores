@@ -8,17 +8,22 @@ ammoEjectBack: 5
 ammoUseEffect: casing3Double
 ammoPerShot: 2
 
+shootY: 0.5
+
 requirements: [
-  spore-pod/30
+  spore-pod/1200
 ]
 
 shootSound: artillery
 forceMultiTarget: true
 
-reload: 360
+reload: 720
 inaccuracy: 15
 recoil: 2
 shootCone: 180
+shootWarmupSpeed: 0.01
+minWarmup: 0.9
+warmupMaintainTime: 90
 
 coolant: {
   type: ConsumeCoolant
@@ -37,7 +42,7 @@ ammoTypes: {
     height: 11
     speed: 5
     damage: 5
-    range: 720
+    rangeOverride: 1200
     lifetime: 80
     splashDamage: 40
     splashDamageRadius: 50
@@ -65,7 +70,7 @@ ammoTypes: {
     width: 6
     height: 9
     speed: 5
-    damage: 10
+    damage: 30
     lifetime: 40
   },
   lead: {
@@ -73,7 +78,7 @@ ammoTypes: {
     width: 6
     height: 9
     speed: 5
-    damage: 10
+    damage: 30
     lifetime: 40
   }
 }
@@ -83,4 +88,4 @@ research: {
 }
 researchCostMultiplier: 0.4
 
-unitCapModifier: 4
+unitCapModifier: 8
