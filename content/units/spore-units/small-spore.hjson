@@ -65,3 +65,5 @@ abilities: [
 research: {
     parent: small-spore-core
 }
+
+useUnitCap: false

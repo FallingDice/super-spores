@@ -52,3 +52,5 @@ abilities: [
 research: {
     parent: mini-spore-hive
 }
+
+useUnitCap: false

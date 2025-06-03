@@ -112,3 +112,5 @@ abilities: [
 research: {
     parent: infected-ground-factory
 }
+
+useUnitCap: false

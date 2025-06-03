@@ -52,3 +52,5 @@ abilities: [
 research: {
     parent: t2-spore-egg
 }
+
+useUnitCap: false
