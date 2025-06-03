@@ -1,4 +1,4 @@
-type: missile
+type: flying
 flying: false
 speed: 0
 rotateSpeed: 0
@@ -6,13 +6,12 @@ engineSize: 0
 hitSize: 32
 
 useUnitCap: false
-physics: true
+physics: false
 
 deathSound: plantBreak
 deathExplosionEffect: steam
 createScorch: false
 
-lifetime: -1
 health: 10000
 drawCell: false
 immunities: [spore-infection, spore-slowed]
