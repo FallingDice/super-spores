@@ -26,6 +26,7 @@ weapons: [
         reload: 600
         shootSound: plantBreak
         faceTarget: false
+        alwaysShooting: true
 
         bullet: {
             type: BasicBulletType
@@ -45,8 +46,8 @@ weapons: [
 
         linearWarmup: true
         minWarmup: 1
-        shootWarmupSpeed: 0.003
-        smoothReloadSpeed: 0.003
+        shootWarmupSpeed: 0.0003
+        smoothReloadSpeed: 0.0003
         faceTarget: false
         shootSound: none
         bullet: {
@@ -87,5 +88,5 @@ abilities: [
 ]
 
 research: {
-    parent: spore-defender
+    parent: spore-carrier
 }

@@ -23,6 +23,11 @@ plans: [
     unit: infected-nova
     requirements: [silicon/30, lead/20, titanium/20, spore-pod/4]
     time: 2400
+  },
+  {
+    unit: spore-carrier
+    requirements: [silicon/8, coal/10, spore-pod/80]
+    time: 2400
   }
 ]
 

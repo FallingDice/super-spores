@@ -1,0 +1,57 @@
+type: mech
+speed: 1
+health: 150
+//1*1크기
+hitSize: 8
+
+mechSideSway: 0.25
+range: 120
+
+weapons: [
+    {
+        shootOnDeath: true
+        targetUnderBlocks: false
+        reload: 24
+        shootCone: 180
+        ejectEffect: none
+        shootSound: explosion
+        x: 0
+        shootY: 0
+        mirror: false
+                bullet: {
+                    collidesTiles: false
+                    collides: false
+                    hitSound: explosion
+
+                    rangeOverride: 180
+                    hitEffect: pulverize
+                    speed: 0
+                    splashDamageRadius: 44
+                    instantDisappear: true
+                    splashDamage: 80
+                    killShooter: true
+                    hittable: false
+                    collidesAir: true
+                }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        spread: 0
+        faceOutwards: false
+        unit: mini-spore-hive
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]
+
+research: {
+    parent: infected-ground-factory
+}
+researchCostMultiplier: 0.4

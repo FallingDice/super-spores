@@ -50,5 +50,5 @@ abilities: [
 ]
 
 research: {
-    parent: spore-defender
+    parent: mini-spore-hive
 }

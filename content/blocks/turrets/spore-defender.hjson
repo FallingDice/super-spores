@@ -61,7 +61,7 @@ ammoTypes: {
     smokeEffect: shootSmokeSquareSparse
     despawnEffect: hitBulletColor
 
-    despawnUnit: mini-spore-hive
+    despawnUnit: t1-spore-egg
 
     status: spore-slowed
   },

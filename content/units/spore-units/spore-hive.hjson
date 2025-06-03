@@ -26,6 +26,7 @@ weapons: [
         reload: 300
         shootSound: plantBreak
         faceTarget: false
+        alwaysShooting: true
 
         bullet: {
             type: BasicBulletType
@@ -62,8 +63,8 @@ weapons: [
 
         linearWarmup: true
         minWarmup: 1
-        shootWarmupSpeed: 0.001
-        smoothReloadSpeed: 0.001
+        shootWarmupSpeed: 0.00015
+        smoothReloadSpeed: 0.00015
         faceTarget: false
         shootSound: none
         bullet: {
