@@ -1,0 +1,54 @@
+type: missile
+flying: false
+speed: 0
+rotateSpeed: 0
+engineSize: 0
+hitSize: 4
+
+deathSound: plantBreak
+deathExplosionEffect: steam
+createScorch: false
+
+lifetime: 360
+health: 40
+drawCell: false
+immunities: [spore-infection, spore-slowed]
+
+physics: false
+groundLayer: 59.9
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 20
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: sdagger-wreck
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: scrawler-wreck
+    },
+    {
+        type: SpawnDeathAbility
+        randAmount: 1
+        amount: 0
+        spread: 0
+        faceOutwards: false
+        unit: snova-wreck
+    }
+]
+
+research: {
+    parent: t2-spore-egg
+}

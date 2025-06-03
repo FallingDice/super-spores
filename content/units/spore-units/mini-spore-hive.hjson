@@ -1,0 +1,91 @@
+type: missile
+flying: false
+speed: 0
+rotateSpeed: 0
+engineSize: 0
+hitSize: 16
+
+useUnitCap: false
+physics: true
+
+deathSound: plantBreak
+deathExplosionEffect: steam
+createScorch: false
+
+lifetime: -1
+health: 1000
+drawCell: false
+immunities: [spore-infection, spore-slowed]
+
+groundLayer: 59.9
+
+weapons: [
+    {
+        mirror: false
+        rotate: true
+        cooldownTime: 600
+        reload: 600
+        shootSound: plantBreak
+        faceTarget: false
+
+        bullet: {
+            type: BasicBulletType
+            shootEffect: shootBig
+            smokeEffect: shootBigSmoke2
+            instantDisappear: true
+            damage: 0
+            spawnUnit: t1-spore-egg
+        }
+    },
+    {
+        shootCone: 360
+        mirror: false
+        shootOnDeath: false
+        controllable: false
+        autoTarget: true
+
+        linearWarmup: true
+        minWarmup: 1
+        shootWarmupSpeed: 0.003
+        smoothReloadSpeed: 0.003
+        faceTarget: false
+        shootSound: none
+        bullet: {
+            type: BasicBulletType
+            shootEffect: none
+            instantDisappear: true
+            damage: 0
+            speed: 0
+            spawnUnit: spore-hive
+            killShooter: true
+            shootEffect: {
+                    type: WaveEffect
+                    lifetime: 10
+                    sizeFrom: 10
+                    sizeTo: 0
+                    strokeFrom: 2
+                    strokeTo: 4
+                    colorFrom: ffffffff
+                    colorTo: ff117488
+                    lightColor: ff0000aa
+            }
+        }
+    }
+]
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    },
+    {
+        type: LiquidRegenAbility
+        liquid: water
+        slurpEffect: neoplasmHeal
+    }
+]
+
+research: {
+    parent: spore-defender
+}
