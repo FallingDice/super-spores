@@ -78,3 +78,5 @@ abilities: [
 research: {
     parent: infected-crawler
 }
+
+useUnitCap: false

@@ -74,6 +74,7 @@ weapons: [
             speed: 0
             spawnUnit: big-spore-hive
             killShooter: true
+            rangeOverride: 480
             shootEffect: {
                     type: WaveEffect
                     lifetime: 10

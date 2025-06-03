@@ -91,6 +91,7 @@ weapons: [
             speed: 0
             spawnUnit: dagger
             killShooter: true
+            rangeOverride: 480
             shootEffect: {
                     type: WaveEffect
                     lifetime: 10

@@ -136,3 +136,5 @@ abilities: [
 research: {
     parent: infected-nova
 }
+
+useUnitCap: false

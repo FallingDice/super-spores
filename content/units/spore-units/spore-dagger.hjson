@@ -74,3 +74,5 @@ abilities: [
 research: {
     parent: infected-dagger
 }
+
+useUnitCap: false
