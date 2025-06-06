@@ -16,7 +16,9 @@ health: 10000
 drawCell: false
 immunities: [spore-infection, spore-slowed]
 
-groundLayer: 59.9
+groundLayer: 59.1
+outlines: false
+drawShadow: false
 
 weapons: [
     {
@@ -24,14 +26,14 @@ weapons: [
         rotate: true
         cooldownTime: 300
         reload: 300
-        shootSound: plantBreak
+        shootSound: none
         faceTarget: false
         alwaysShooting: true
 
         bullet: {
             type: BasicBulletType
-            shootEffect: shootBig
-            smokeEffect: shootBigSmoke2
+            shootEffect: none
+            smokeEffect: none
             instantDisappear: true
             damage: 0
             spawnUnit: t1-spore-egg

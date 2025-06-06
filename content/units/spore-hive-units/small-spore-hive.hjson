@@ -16,7 +16,9 @@ health: 1000
 drawCell: false
 immunities: [spore-infection, spore-slowed]
 
-groundLayer: 59.9
+groundLayer: 59.1
+outlines: false
+drawShadow: false
 
 weapons: [
     {
