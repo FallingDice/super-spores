@@ -3,7 +3,7 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 64
+hitSize: 32
 
 useUnitCap: false
 physics: false
@@ -90,7 +90,7 @@ weapons: [
             instantDisappear: true
             damage: 0
             speed: 0
-            spawnUnit: dagger
+            spawnUnit: primitive-spore
             killShooter: true
             rangeOverride: 480
             shootEffect: {
@@ -120,7 +120,3 @@ abilities: [
         slurpEffect: neoplasmHeal
     }
 ]
-
-research: {
-    parent: big-spore-hive
-}

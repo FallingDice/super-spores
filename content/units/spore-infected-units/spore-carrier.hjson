@@ -6,6 +6,7 @@ hitSize: 8
 
 mechSideSway: 0.25
 range: 120
+drawCell: false
 
 weapons: [
     {
@@ -42,7 +43,7 @@ abilities: [
         amount: 1
         spread: 0
         faceOutwards: false
-        unit: mini-spore-hive
+        unit: small-spore-hive
     },
     {
         type: LiquidExplodeAbility

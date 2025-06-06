@@ -15,7 +15,7 @@ drawCell: false
 immunities: [spore-infection, spore-slowed]
 
 physics: false
-groundLayer: 59.9
+groundLayer: 59.8
 
 abilities: [
     {
@@ -50,7 +50,7 @@ abilities: [
 ]
 
 research: {
-    parent: t1-spore-egg
+    parent: small-spore-hive
 }
 
 useUnitCap: false

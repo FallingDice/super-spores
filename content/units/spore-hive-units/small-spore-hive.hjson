@@ -3,7 +3,7 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 16
+hitSize: 8
 
 useUnitCap: false
 physics: false

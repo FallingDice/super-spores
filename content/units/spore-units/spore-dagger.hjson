@@ -48,14 +48,6 @@ abilities: [
         unit: sdagger-wreck
     },
     {
-        type: SpawnDeathAbility
-        randAmount: 1
-        amount: 0
-        spread: 0
-        faceOutwards: false
-        unit: small-spore-core
-    },
-    {
         type: LiquidExplodeAbility
         liquid: water
         amount: 30

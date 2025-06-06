@@ -3,7 +3,7 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 4
+hitSize: 16
 
 deathSound: plantBreak
 deathExplosionEffect: steam
@@ -15,7 +15,7 @@ drawCell: false
 immunities: [spore-infection, spore-slowed]
 
 physics: false
-groundLayer: 59.9
+groundLayer: 59.8
 
 abilities: [
     {
@@ -50,7 +50,7 @@ abilities: [
 ]
 
 research: {
-    parent: mini-spore-hive
+    parent: t2-spore-egg
 }
 
 useUnitCap: false

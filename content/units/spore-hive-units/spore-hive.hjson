@@ -3,7 +3,7 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 32
+hitSize: 16
 
 useUnitCap: false
 physics: false
@@ -73,7 +73,7 @@ weapons: [
             instantDisappear: true
             damage: 0
             speed: 0
-            spawnUnit: big-spore-hive
+            spawnUnit: large-spore-hive
             killShooter: true
             rangeOverride: 480
             shootEffect: {
@@ -105,5 +105,5 @@ abilities: [
 ]
 
 research: {
-    parent: mini-spore-hive
+    parent: small-spore-hive
 }
