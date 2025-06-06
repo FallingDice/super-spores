@@ -24,14 +24,14 @@ weapons: [
         rotate: true
         cooldownTime: 600
         reload: 600
-        shootSound: plantBreak
+        shootSound: none
         faceTarget: false
         alwaysShooting: true
 
         bullet: {
             type: BasicBulletType
-            shootEffect: shootBig
-            smokeEffect: shootBigSmoke2
+            shootEffect: none
+            smokeEffect: none
             instantDisappear: true
             damage: 0
             spawnUnit: t1-spore-egg

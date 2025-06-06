@@ -1,0 +1,37 @@
+type: crawl
+speed: 0.5
+health: 1500
+armor: 7
+hitSize: 8
+
+immunities: [spore-infection, spore-slowed]
+
+weapons: [
+    {
+        name: large-weapon
+        mirror: true
+        reload: 13
+        x: 4
+        y:2
+        top: false
+        inaccuracy: 15
+        ejectEffect: casing1
+
+        bullet: {
+            type: BasicBulletType
+            damage: 9
+            speed: 2.5
+            width: 7
+            height: 9
+            lifetime: 60
+        }
+    }
+]
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]
