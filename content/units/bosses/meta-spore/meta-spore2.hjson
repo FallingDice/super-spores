@@ -1,4 +1,4 @@
-type: lags
+type: legs
 speed: 1
 health: 600
 armor: 5
@@ -33,7 +33,7 @@ abilities: [
         amount: 1
         spread: 0
         faceOutwards: false
-        unit: meta-spore-3crawl
+        unit: meta-spore3
     },
     {
         type: LiquidExplodeAbility

@@ -33,7 +33,7 @@ abilities: [
         amount: 1
         spread: 0
         faceOutwards: false
-        unit: meta-spore-2lags
+        unit: meta-spore2
     },
     {
         type: LiquidExplodeAbility
