@@ -6,6 +6,21 @@ hitSize: 8
 
 immunities: [spore-infection, spore-slowed]
 
+legStraightness: 0.3
+
+legCount: 6
+legLength: 8
+lockLegBase: true
+legContinuousMove: true
+legExtension: -2
+legBaseOffset: 3
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.96
+legForwardScl: 1.1
+legGroupSize: 3
+rippleScale: 0.2
+
 weapons: [
     {
         mirror: true
