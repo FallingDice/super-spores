@@ -3,7 +3,7 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 32
+hitSize: 16
 
 useUnitCap: false
 physics: false
@@ -18,7 +18,6 @@ immunities: [spore-infection, spore-slowed]
 
 groundLayer: 59.1
 outlines: false
-customShadow: true
 
 weapons: [
     {
