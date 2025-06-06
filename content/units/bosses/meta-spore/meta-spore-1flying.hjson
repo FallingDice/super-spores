@@ -8,7 +8,6 @@ immunities: [spore-infection, spore-slowed]
 
 weapons: [
     {
-        name: large-weapon
         mirror: true
         reload: 3
         x: 4
@@ -34,7 +33,7 @@ abilities: [
         amount: 1
         spread: 0
         faceOutwards: false
-        unit: meta-spore-2lag
+        unit: meta-spore-2lags
     },
     {
         type: LiquidExplodeAbility

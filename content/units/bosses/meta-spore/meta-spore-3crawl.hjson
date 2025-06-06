@@ -8,22 +8,21 @@ immunities: [spore-infection, spore-slowed]
 
 weapons: [
     {
-        name: large-weapon
         mirror: true
-        reload: 13
+        reload: 26
         x: 4
         y:2
         top: false
-        inaccuracy: 15
+        inaccuracy: 0
         ejectEffect: casing1
 
         bullet: {
             type: BasicBulletType
-            damage: 9
-            speed: 2.5
+            damage: 72
+            speed: 8
             width: 7
             height: 9
-            lifetime: 60
+            lifetime: 20
         }
     }
 ]
