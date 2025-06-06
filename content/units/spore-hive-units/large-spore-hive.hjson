@@ -18,7 +18,7 @@ immunities: [spore-infection, spore-slowed]
 
 groundLayer: 59.1
 outlines: false
-drawShadow: false
+customShadow: true
 
 weapons: [
     {
