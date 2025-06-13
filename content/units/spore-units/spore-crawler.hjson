@@ -38,12 +38,6 @@ weapons: [
                     killShooter: true
                     hittable: false
                     collidesAir: true
-
-                    //basic effect
-                    shootEffect: sparkShoot
-                    smokeEffect: shootBigSmoke
-                    hitEffect: hitBulletColor
-                    despawnEffect: hitBulletColor
                 }
     }
 ]
