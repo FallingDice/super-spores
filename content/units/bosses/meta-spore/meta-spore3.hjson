@@ -4,10 +4,13 @@ health: 1500
 armor: 7
 hitSize: 8
 
+useUnitCap: false
+
 immunities: [spore-infection, spore-slowed]
 
 weapons: [
     {
+        shootSound: blaster
         mirror: true
         reload: 26
         x: 4
@@ -23,6 +26,26 @@ weapons: [
             width: 7
             height: 9
             lifetime: 20
+
+            backColor: 665c9f
+            frontColor: ffffff
+
+            trailLength: 27
+            trailWidth: 2.5
+            trailColor: 665c9f
+
+            trailInterp: slope
+
+            shrinkX: 0.6
+            shrinkY: 0.2
+
+            homingPower: 0.2
+            homingDelay: 4
+
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
         }
     }
 ]

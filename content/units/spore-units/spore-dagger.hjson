@@ -18,6 +18,7 @@ weapons: [
         y:2
         top: false
         ejectEffect: casing1
+        shootSound: bolt
 
         shoot: {
             shots: 3
@@ -32,8 +33,23 @@ weapons: [
             height: 9
             lifetime: 60
 
+            backColor: 665c9f
             frontColor: ffffff
-            backColor: ff00ff
+
+            trailLength: 27
+            trailWidth: 2.5
+            trailColor: 665c9f
+
+            trailInterp: slope
+
+            shrinkX: 0.6
+            shrinkY: 0.2
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
         }
     }
 ]

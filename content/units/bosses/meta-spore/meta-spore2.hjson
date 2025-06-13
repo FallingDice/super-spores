@@ -4,6 +4,8 @@ health: 600
 armor: 5
 hitSize: 8
 
+useUnitCap: false
+
 immunities: [spore-infection, spore-slowed]
 
 legStraightness: 0.3
@@ -23,21 +25,45 @@ rippleScale: 0.2
 
 weapons: [
     {
+        shootSound: missile
         mirror: true
         reload: 8
         x: 4
         y:2
+        shootY: 4
         top: false
         inaccuracy: 5
         ejectEffect: casing1
 
         bullet: {
-            type: BasicBulletType
+            type: ArtilleryBulletType
             damage: 36
-            speed: 1
-            width: 7
+            splashDamageRadius: 8
+            splashDamage: 24
+            speed: 3
+            width: 9
             height: 9
             lifetime: 120
+
+            collidesTiles: true
+            knockback: 0.8
+
+            backColor: 665c9f
+            frontColor: ffffff
+
+            trailLength: 27
+            trailWidth: 2.5
+            trailColor: 665c9f
+
+            trailInterp: slope
+
+            shrinkX: 0.6
+            shrinkY: 0.2
+
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
         }
     }
 ]

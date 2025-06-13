@@ -7,6 +7,7 @@ hitSize: 8
 
 useUnitCap: false
 physics: false
+drag: 0.1
 
 deathSound: plantBreak
 deathExplosionEffect: steam
@@ -16,8 +17,7 @@ health: 1000
 drawCell: false
 immunities: [spore-infection, spore-slowed]
 
-groundLayer: 59.1
-outlines: false
+groundLayer: 60.1
 
 weapons: [
     {
@@ -26,7 +26,7 @@ weapons: [
         cooldownTime: 600
         reload: 600
         shootSound: none
-        faceTarget: false
+        faceTarget: true
         alwaysShooting: true
 
         bullet: {

@@ -39,6 +39,21 @@ weapons: [
             collidesTeam: true
             backColor: 98ffa9
             frontColor: ffffff
+
+            trailLength: 27
+            trailWidth: 2.5
+            trailColor: 98ffa9
+
+            trailInterp: slope
+
+            shrinkX: 0.6
+            shrinkY: 0.2
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
         }
     },
     {
