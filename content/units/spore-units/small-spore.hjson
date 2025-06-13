@@ -63,7 +63,7 @@ abilities: [
 ]
 
 research: {
-    parent: small-spore-core
+    parent: primitive-spore
 }
 
 useUnitCap: false
