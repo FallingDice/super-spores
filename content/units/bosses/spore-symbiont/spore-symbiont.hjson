@@ -1,0 +1,27 @@
+/suffix로 누르면 무기파츠들이 로봇의 양 옆으로 늘어져서 공격(이게 트랜스폼이지)
+
+type: mech
+speed: 0.8
+health: 1000
+armor: 10
+hitSize: 8
+
+useUnitCap: false
+drawCell: false
+
+immunities: [spore-infection, spore-slowed]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        spread: 0
+        faceOutwards: false
+        unit: spore-symbiont-dmged1
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]

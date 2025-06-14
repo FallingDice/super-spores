@@ -1,0 +1,27 @@
+/no armor 아머빼고 다 그대로
+
+type: mech
+speed: 0.8
+health: 3000
+armor: 3
+hitSize: 8
+
+useUnitCap: false
+drawCell: false
+
+immunities: [spore-infection, spore-slowed]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        spread: 0
+        faceOutwards: false
+        unit: spore-symbiont-dmged2
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]

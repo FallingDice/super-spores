@@ -1,0 +1,20 @@
+/no leg 다리도 없어 매우 약함
+
+type: crawl
+speed: 0.4
+health: 1000
+armor: 1
+hitSize: 8
+
+useUnitCap: false
+drawCell: false
+
+immunities: [spore-infection, spore-slowed]
+
+abilities: [
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 10
+    }
+]

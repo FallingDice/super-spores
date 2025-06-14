@@ -1,0 +1,66 @@
+type: crawl
+speed: 0.1
+health: 360000
+armor: 12
+hitSize: 64
+
+useUnitCap: false
+drawCell: false
+
+immunities: [spore-infection, spore-slowed]
+
+weapons: [
+    {
+        shootSound: bolt
+        mirror: true
+        reload: 3
+        x: 4
+        y:2
+        top: false
+        inaccuracy: 15
+        ejectEffect: casing1
+
+        bullet: {
+            type: BasicBulletType
+            damage: 9
+            speed: 2.5
+            width: 7
+            height: 9
+            lifetime: 60
+
+            backColor: 665c9f
+            frontColor: ffffff
+
+            trailLength: 27
+            trailWidth: 2.5
+            trailColor: 665c9f
+
+            trailInterp: slope
+
+            shrinkX: 0.6
+            shrinkY: 0.2
+
+            //basic effect
+            shootEffect: sparkShoot
+            smokeEffect: shootBigSmoke
+            hitEffect: hitBulletColor
+            despawnEffect: hitBulletColor
+        }
+    }
+]
+
+abilities: [
+    {
+        type: SpawnDeathAbility
+        amount: 1
+        randAmount: 2
+        spread: 60
+        faceOutwards: false
+        unit: large-spore-hive
+    },
+    {
+        type: LiquidExplodeAbility
+        liquid: water
+        amount: 240
+    }
+]
