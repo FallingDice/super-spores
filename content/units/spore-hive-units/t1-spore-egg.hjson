@@ -50,7 +50,7 @@ abilities: [
 ]
 
 research: {
-    parent: small-spore-hive
+    parent: seed-spore-hive
 }
 
 useUnitCap: false

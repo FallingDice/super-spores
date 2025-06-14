@@ -43,7 +43,7 @@ abilities: [
         amount: 1
         spread: 0
         faceOutwards: false
-        unit: small-spore-hive
+        unit: seed-spore-hive
     },
     {
         type: LiquidExplodeAbility
