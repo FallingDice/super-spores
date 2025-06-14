@@ -7,7 +7,6 @@ hitSize: 8
 
 useUnitCap: false
 physics: false
-drag: 0.1
 
 deathSound: plantBreak
 deathExplosionEffect: steam
@@ -89,5 +88,5 @@ abilities: [
 ]
 
 research: {
-    parent: spore-carrier
+    parent: seed-spore-hive
 }

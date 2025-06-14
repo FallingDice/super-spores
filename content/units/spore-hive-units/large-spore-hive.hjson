@@ -7,7 +7,6 @@ hitSize: 32
 
 useUnitCap: false
 physics: false
-drag: 1
 
 deathSound: plantBreak
 deathExplosionEffect: steam

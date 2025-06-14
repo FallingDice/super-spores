@@ -3,58 +3,19 @@ flying: false
 speed: 0
 rotateSpeed: 0
 engineSize: 0
-hitSize: 16
+hitSize: 4
 
 useUnitCap: false
-physics: false
 
 deathSound: plantBreak
 deathExplosionEffect: steam
 createScorch: false
 
-health: 10000
+health: 100
 drawCell: false
 immunities: [spore-infection, spore-slowed]
 
-groundLayer: 60.1
-
 weapons: [
-    {
-        mirror: false
-        rotate: true
-        cooldownTime: 300
-        reload: 300
-        shootSound: none
-        faceTarget: true
-        alwaysShooting: true
-
-        bullet: {
-            type: BasicBulletType
-            shootEffect: none
-            smokeEffect: none
-            instantDisappear: true
-            damage: 0
-            spawnUnit: t1-spore-egg
-        }
-    },
-    {
-        mirror: false
-        rotate: true
-        cooldownTime: 900
-        reload: 900
-        shootSound: none
-        faceTarget: false
-
-        bullet: {
-            type: BasicBulletType
-            shootEffect: none
-            smokeEffect: none
-            instantDisappear: true
-            damage: 0
-            spawnUnit: t2-spore-egg
-            rangeOverride: 60
-        }
-    },
     {
         shootCone: 360
         mirror: false
@@ -64,8 +25,8 @@ weapons: [
 
         linearWarmup: true
         minWarmup: 1
-        shootWarmupSpeed: 0.00015
-        smoothReloadSpeed: 0.00015
+        shootWarmupSpeed: 0.1
+        smoothReloadSpeed: 0.1
         faceTarget: false
         shootSound: none
         bullet: {
@@ -74,7 +35,7 @@ weapons: [
             instantDisappear: true
             damage: 0
             speed: 0
-            spawnUnit: large-spore-hive
+            spawnUnit: small-spore-hive
             killShooter: true
             rangeOverride: 480
             shootEffect: {
@@ -106,5 +67,5 @@ abilities: [
 ]
 
 research: {
-    parent: small-spore-hive
+    parent: spore-carrier
 }
